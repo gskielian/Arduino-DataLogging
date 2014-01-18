@@ -31,5 +31,13 @@ cat /dev/cu.usbmodem1421 115200 | awk '{ for (i=0; i<NF; i++) printf $i + system
 ```
 
 
+Lastly, utilize this to activate other command line utitilies
+**... and can redirect easily into a data file**
+```bash
+cat /dev/cu.usbmodem1421 115200 | awk '{ for (i=0; i<NF; i++) if($i == 9001) {system("say OVER 9001\!"} printf $i + system("date +,%s")}' >> sensor_readings.dat
+```
+
+
+
 ### Sample Output
 
