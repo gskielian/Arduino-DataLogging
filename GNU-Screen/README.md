@@ -23,8 +23,20 @@ And 2) type in the following:
 
 `screen -L /dev/tty.usbmodem9999`  instead of /dev/tty.usbmodem9999, use the serial port it says on the bottom right corner of the Arduino ide.
 
+You are getting timestamps -- but there is one thing you will need to do:
 
-this is now logging timestamps with your data!  However, this is not as great perhaps as you might want it, as the time-stamps are not in line with your Serial Output.
+notice this output below:
+
+<img src="./screen-screenshot.png" alt="problems"/>
+
+The data is not inline with the timestamp.
+
+Verdict
+-------
+
+While this method is terse, until the data can be reliably placed inline with the timestamp (or at some script which places them in standard csv, json, or tsv format) then it may be better to poll with py-serial.
+
+Checkout the py-serial implementation to learn more.
 
 
 
