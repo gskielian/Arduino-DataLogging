@@ -11,7 +11,7 @@ This can also be done via a bluetooth tty port (in theory, I haven't tried).
 **(there was a lot of work put into this, to me it's like a haiku)
 
 
-## Why's it's better than pyserial
+## How to use it
 
 This is basically what we've always wanted: serial monitor straight to stdout of shell.
 
