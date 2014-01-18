@@ -20,21 +20,21 @@ You can also get the timestamp in nanoseconds (if you use a Linux machine, Raspb
 **Furthermore, it is one line:**
 
 ```bash
-cat /dev/cu.usbmodem1421 115200 | awk '{ for (i=0; i<NF; i++) printf $i + system("date +,%s")}'
+cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) printf $i + system("date +,%s")}'
 ```
 
 
 
 **... and can redirect easily into a data file**
 ```bash
-cat /dev/cu.usbmodem1421 115200 | awk '{ for (i=0; i<NF; i++) printf $i + system("date +,%s")}' >> sensor_readings.dat
+cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) printf $i + system("date +,%s")}' >> sensor_readings.dat
 ```
 
 
 
 **... and it can be used to allow the arduino to control the command line:**
 ```bash
-cat /dev/cu.usbmodem1421 115200 | awk '{ for (i=0; i<NF; i++) if($i == 9001) {system("say OVER 9001\!"} printf $i + system("date +,%s")}' >> sensor_readings.dat
+cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) if($i == 9001) {system("say OVER 9001\!"} printf $i + system("date +,%s")}' >> sensor_readings.dat
 ```
 
 
