@@ -1,10 +1,10 @@
 Bash One Liner
 ==============
 
-Simple streamd
+Simple streamed timestamped sensor data from your Arduino.
 
 
-This method accomplishes fast fast, timestamped data without purchasing an RTC.
+This method accomplishes fast-fast timestamped data without purchasing an RTC.
 
 This can also be done via a bluetooth tty port (in theory, I haven't tried).
 
