@@ -41,3 +41,5 @@ cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) if($i == 9001) {system("s
 
 ### Sample Output
 
+
+![sample output](./sample_output.png)
