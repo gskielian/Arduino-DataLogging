@@ -13,6 +13,8 @@ The following examples shows a really simple approach for doing this, which will
 
 ### Naive Pyserial and Sketch
 
+this code can be found in the `naive` folder
+
 ####naive.py
 
 ```python 
@@ -45,6 +47,10 @@ void loop() {
 
 
 ### Robust Pyserial and Sketch
+
+python code and arduino sketch can be found in the `robust` folder.
+
+#### robust.py
 ```python 
 #!/usr/bin/python
 import serial, time
@@ -84,7 +90,8 @@ while 1 :
 
 ```
 
-```arduino
+#### robust.ino
+```c
 void setup () {
   pinMode(13, OUTPUT);
   Serial.begin(115200);
