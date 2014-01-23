@@ -28,7 +28,7 @@ while 1 :
     f = open('dataFile.txt','a')
 ```
 
-```ino
+```wiring
 
 void setup() {
   Serial.begin(115200);
