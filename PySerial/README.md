@@ -13,6 +13,7 @@ The following examples shows a really simple approach for doing this, which will
 
 ### Naive Pyserial and Sketch
 
+####naive.py
 
 ```python 
 
@@ -28,6 +29,8 @@ while 1 :
     f = open('dataFile.txt','a')
 ```
 
+
+####naive.ino
 ```c
 
 void setup() {
