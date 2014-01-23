@@ -48,7 +48,7 @@ void loop() {
 
 ### Robust Pyserial and Sketch
 
-python code and arduino sketch can be found in the `robust` folder.
+ #python code and arduino sketch can be found in the `robust` folder.
 
 #### robust.py
 ```python 
