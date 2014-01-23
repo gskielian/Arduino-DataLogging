@@ -13,7 +13,7 @@ The following examples shows a really simple approach for doing this, which will
 
 ### Naive Pyserial and Sketch
 
-this code can be found in the `naive` folder
+* this code can be found in the `naive` folder
 
 ####naive.py
 
