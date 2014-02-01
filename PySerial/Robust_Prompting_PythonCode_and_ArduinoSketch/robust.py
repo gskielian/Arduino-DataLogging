@@ -29,7 +29,7 @@ def send_and_receive( theinput ):
 f = open('dataFile.txt','a')
 
 while 1 :
-    arduino_sensor = send_and_receive('1')
-    f.write(arduino_sensor)
-    f.close()
-    f = open('dataFile.txt','a')
+  arduino_sensor = send_and_receive('1')
+  f.write(arduino_sensor)
+  f.closed
+  f = open('dataFile.txt','a')
