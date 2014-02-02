@@ -1,5 +1,8 @@
 #!/usr/bin/python
-import serial, time
+import serial
+import time
+import datetime
+
 ser = serial.Serial('/dev/ttyACM0',  115200, timeout = 0.1)
 
 #if you only want to send data to arduino (i.e. a signal to move a servo)
@@ -29,7 +32,9 @@ def send_and_receive( theinput ):
 f = open('dataFile.txt','a')
 
 while 1 :
+  time_stamp =time.time()
   arduino_sensor = send_and_receive('1')
-  f.write(arduino_sensor)
+  date_stamp = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
+  f.write(time_stampt + arduino_sensor + date_stamp)
   f.closed
   f = open('dataFile.txt','a')
