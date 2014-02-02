@@ -1,3 +1,5 @@
+char ch;
+
 void setup () {
   pinMode(13, OUTPUT);
   Serial.begin(115200);
