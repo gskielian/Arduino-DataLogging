@@ -35,6 +35,6 @@ while 1 :
   time_stamp =time.time()
   arduino_sensor = send_and_receive('1')
   date_stamp = datetime.datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
-  f.write(time_stampt + arduino_sensor + date_stamp)
+  f.write(time_stamp + arduino_sensor + date_stamp)
   f.closed
   f = open('dataFile.txt','a')
