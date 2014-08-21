@@ -14,18 +14,25 @@ void loop() {
       char_input = Serial.read();
       
       switch (char_input) {
-      case '1':
-        Serial.println(analogRead(A0)); // if '1' is received, then send back analog read A0
-      break;
-      case '2':
-       digitalWrite(13,HIGH); // if '2' is received, turn on the led attached to 13
-      break;
-      case '3':
-       digitalWrite(13,LOW); // if '3' is received then turn off the led attached 13
-      break;
-      default: 
-        delay(10);
-      break;
+      
+        case '1': 
+          // if '1' is received, then send back analog read A0
+          Serial.println(analogRead(A0)); 
+          break;
+        
+        case '2': 
+          // if '2' is received, turn on the led attached to 13
+          digitalWrite(13,HIGH); 
+          break;
+        
+        case '3':
+          // if '3' is received then turn off the led attached 13
+          digitalWrite(13,LOW); 
+          break;
+          
+        default: 
+          delay(10);
+          break;
       }
   }
 
