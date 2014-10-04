@@ -49,5 +49,5 @@ format:
 
 above was created using following:
 ```bash
-cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) printf $i + system("echo , `date`)}'
+cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) printf $i + system("echo , `date`")}'
 ```
