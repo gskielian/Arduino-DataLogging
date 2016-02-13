@@ -60,7 +60,7 @@ cat /dev/cu.usbmodem1421 | awk '{ for (i=0; i<NF; i++) printf $i + system("echo 
 
 if you are printing two datapoints from your arduino, you can use the following:
 ```bash
-cat /dev/cu.usbserial-AL01CAQR | awk -F" " '{ printf "%.2f,%d",$1,$2,system("echo \",`date`\"")}'
+cat /dev/cu.usbserial-AL01CAQR | awk -F" " '{ printf "%.2f,%d",$1,$2; system("echo \",`date`\"")}'
 ```
 
 note that you have control over formatting with awk-style printf's
