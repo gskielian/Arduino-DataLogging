@@ -27,6 +27,8 @@ f = open('dataFile.txt','a')
 
 while 1 :
     f.write(ser.readline())
+    ser.flushInput()
+    ser.flushOutput()
     f.close()
     f = open('dataFile.txt','a')
 ```
@@ -66,6 +68,8 @@ def send( theinput ):
 
 #if you would like to tell the arduino that you would like to receive data from the arduino
 def send_and_receive( theinput ):
+  ser.flushInput()
+  ser.flushOutput()
   ser.write( theinput )
   while True:
     try:
