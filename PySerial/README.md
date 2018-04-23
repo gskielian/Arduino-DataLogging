@@ -13,9 +13,9 @@ The following examples shows a really simple approach for doing this, which will
 
 ### Naive Pyserial and Sketch
 
- #this code can be found in the `naive` folder
+This code can be found in the `naive` folder
 
-####naive.py
+#### naive.py
 
 ```python 
 
@@ -34,7 +34,7 @@ while 1 :
 ```
 
 
-####naive.ino
+#### naive.ino
 ```c
 
 void setup() {
