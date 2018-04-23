@@ -12,6 +12,8 @@ def send( theinput ):
 
 #if you would like to tell the arduino that you would like to receive data from the arduino
 def send_and_receive( theinput ):
+  ser.flushInput()
+  ser.flushOutput()
   ser.write( theinput )
   while True:
     try:
